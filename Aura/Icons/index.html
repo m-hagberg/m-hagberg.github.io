@@ -1,0 +1,337 @@
+<!doctype html>
+<html>
+<head>
+    <title>Icons for Aura</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            margin: 0 2.5rem;
+            background: beige;
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        }
+        code {
+            color: #666;
+            font-size: 1.25rem;
+            padding: 0 .25rem;
+        }
+        div {
+            margin: 1rem 0;
+        }
+        .list {
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 2.5rem;
+            display: grid;
+        }
+        .list > div {
+            border: 1px solid #ccc;
+            border-radius: 1rem;
+            background: #fafafa;
+            padding: 0 1.5rem 1.5rem;
+        }
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            cursor: pointer;
+        }
+        svg {
+            max-width: 100px;
+            max-height: 100px;
+        }
+        /* Hide visually, but show for screen readers */
+        .access-label {
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+            white-space: nowrap;
+        }
+
+        #copied {
+            background: #0a0;
+            padding: .75rem;
+            border-radius: 1rem;
+            border: 1px solid #070;
+            color: #fff;
+            font-weight: 600;
+            height: 1.25rem;
+            opacity: 0;
+            text-align: center;
+            transition: .25s opacity;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>Important: use meaningful and localized labels</h3>
+        <p>A "magnifying glass" icon can mean "Show the search form" in one context, and "Submit my search query" in a second context. Your text labels should then be "Show the search form" and "Submit search query", not "Search" (too generic) or worse "Magnifying glass" (describes the visuals and not the meaning). On multilingual sites, your text labels should also be localized, including all text labels that are hidden by default for sighted users.</p>
+    </div>
+
+    <hr>
+
+    <div>
+        <strong>Example usage:</strong>
+        <code><pre>
+&lt;a title="Filter"&gt;
+    &lt;svg class="icon" aria-hidden="true" focusable="false" style="fill: #81be44;"&gt;
+        &lt;use xlink:href="icons.svg#filter"&gt;&lt;/use&gt;
+    &lt;/svg&gt;
+    &lt;span class="access-label"&gt;Filter&lt;/span&gt;
+&lt;/a&gt;
+        </pre></code>
+        <p>The <code>a</code> element is optional. For styling these icons, you can either use classes or inline styles. Colors are controlled with either the <code>fill</code> CSS property or the <code>fill=""</code> SVG attribute.</p>
+    </div>
+
+    <hr>
+
+    <h3>Click to copy source: <div id="copied"></div></h3>
+
+    <div class="list">
+        <div>
+            <h3>#filter</h3>
+            <a title="Filter">
+                <svg class="icon" aria-hidden="true" focusable="false">
+                    <use xlink:href="icons.svg#filter"></use>
+                </svg>
+                <span class="access-label">Filter</span>
+            </a>
+        </div>
+
+        <div>
+            <h3>#arrow-right</h3>
+            <a title="">
+                <svg class="icon" aria-hidden="true" focusable="false">
+                    <use xlink:href="icons.svg#arrow-right"></use>
+                </svg>
+                <span class="access-label"></span>
+            </a>
+        </div>
+
+        <div>
+            <h3>#cancel</h3>
+            <a title="">
+                <svg class="icon" aria-hidden="true" focusable="false">
+                    <use xlink:href="icons.svg#cancel"></use>
+                </svg>
+                <span class="access-label"></span>
+            </a>
+        </div>
+
+        <div>
+            <h3>#check</h3>
+            <a title="">
+                <svg class="icon" aria-hidden="true" focusable="false">
+                    <use xlink:href="icons.svg#check"></use>
+                </svg>
+                <span class="access-label"></span>
+            </a>
+        </div>
+
+        <div>
+            <h3>#download</h3>
+            <a title="">
+                <svg class="icon" aria-hidden="true" focusable="false" style="fill: #81be44;">
+                    <use xlink:href="icons.svg#download"></use>
+                </svg>
+                <span class="access-label"></span>
+            </a>
+        </div>
+
+        <div>
+            <h3>#arrow-banner-right</h3>
+            <a title="">
+                <svg class="icon" aria-hidden="true" focusable="false">
+                    <use xlink:href="icons.svg#arrow-banner-right"></use>
+                </svg>
+                <span class="access-label"></span>
+            </a>
+        </div>
+
+        <div>
+            <h3>#flag-united-kingdom</h3>
+            <a title="">
+                <svg class="icon" aria-hidden="true" focusable="false">
+                    <use xlink:href="icons.svg#flag-united-kingdom"></use>
+                </svg>
+                <span class="access-label"></span>
+            </a>
+        </div>
+
+        <div>
+            <h3>#flag-sweden</h3>
+            <a title="">
+                <svg class="icon" aria-hidden="true" focusable="false">
+                    <use xlink:href="icons.svg#flag-sweden"></use>
+                </svg>
+                <span class="access-label"></span>
+            </a>
+        </div>
+
+        <div>
+            <h3>#plus</h3>
+            <a title="">
+                <svg class="icon" aria-hidden="true" focusable="false">
+                    <use xlink:href="icons.svg#plus"></use>
+                </svg>
+                <span class="access-label"></span>
+            </a>
+        </div>
+
+        <div>
+            <h3>#search</h3>
+            <a title="">
+                <svg class="icon" aria-hidden="true" focusable="false" fill="#7f8fa4">
+                    <use xlink:href="icons.svg#search"></use>
+                </svg>
+                <span class="access-label"></span>
+            </a>
+        </div>
+
+        <div>
+            <h3>#search-secondary</h3>
+            <a title="">
+                <svg class="icon" aria-hidden="true" focusable="false">
+                    <use xlink:href="icons.svg#search-secondary"></use>
+                </svg>
+                <span class="access-label"></span>
+            </a>
+        </div>
+
+        <div>
+            <h3>#arrow-banner-left</h3>
+            <a title="">
+                <svg class="icon" aria-hidden="true" focusable="false">
+                    <use xlink:href="icons.svg#arrow-banner-left"></use>
+                </svg>
+                <span class="access-label"></span>
+            </a>
+        </div>
+
+        <div>
+            <h3>#award</h3>
+            <a title="">
+                <svg class="icon" aria-hidden="true" focusable="false">
+                    <use xlink:href="icons.svg#award"></use>
+                </svg>
+                <span class="access-label"></span>
+            </a>
+        </div>
+
+        <div>
+            <h3>#button</h3>
+            <a title="">
+                <svg class="icon" aria-hidden="true" focusable="false">
+                    <use xlink:href="icons.svg#button"></use>
+                </svg>
+                <span class="access-label"></span>
+            </a>
+        </div>
+
+        <div>
+            <h3>#download-folder</h3>
+            <a title="">
+                <svg class="icon" aria-hidden="true" focusable="false">
+                    <use xlink:href="icons.svg#download-folder"></use>
+                </svg>
+                <span class="access-label"></span>
+            </a>
+        </div>
+
+        <div>
+            <h3>#facebook</h3>
+            <a title="">
+                <svg class="icon" aria-hidden="true" focusable="false" fill="#3b5998">
+                    <use xlink:href="icons.svg#facebook"></use>
+                </svg>
+                <span class="access-label"></span>
+            </a>
+        </div>
+
+        <div>
+            <h3>#linkedin (?)</h3>
+            <a title="">
+                <svg class="icon" aria-hidden="true" focusable="false" fill="#007bb5">
+                    <use xlink:href="icons.svg#linkedin"></use>
+                </svg>
+                <span class="access-label"></span>
+            </a>
+        </div>
+
+        <div>
+            <h3>#youtube (?)</h3>
+            <a title="">
+                <svg class="icon" aria-hidden="true" focusable="false" fill="#f00">
+                    <use xlink:href="icons.svg#youtube"></use>
+                </svg>
+                <span class="access-label"></span>
+            </a>
+        </div>
+
+        <div>
+            <h3>#lightbulb</h3>
+            <a title="">
+                <svg class="icon" aria-hidden="true" focusable="false">
+                    <use xlink:href="icons.svg#lightbulb"></use>
+                </svg>
+                <span class="access-label"></span>
+            </a>
+        </div>
+
+        <div>
+            <h3>#leaf</h3>
+            <a title="">
+                <svg class="icon" aria-hidden="true" focusable="false">
+                    <use xlink:href="icons.svg#leaf"></use>
+                </svg>
+                <span class="access-label"></span>
+            </a>
+        </div>
+
+        <div>
+            <h3>#settings</h3>
+            <a title="">
+                <svg class="icon" aria-hidden="true" focusable="false">
+                    <use xlink:href="icons.svg#settings"></use>
+                </svg>
+                <span class="access-label"></span>
+            </a>
+        </div>
+
+        <div>
+            <h3>#rectangle</h3>
+            <a title="">
+                <svg class="icon" aria-hidden="true" focusable="false" fill="#81be44">
+                    <use xlink:href="icons.svg#rectangle"></use>
+                </svg>
+                <span class="access-label"></span>
+            </a>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script>
+        const clipboard = new ClipboardJS('a', {
+            text: e => e.innerHTML
+        });
+
+        clipboard.on('success', () => {
+            const original = copied.textContent;
+            copied.textContent = 'Copied!';
+            copied.style.opacity = 1;
+
+            setTimeout(() => {
+                copied.textContent = original;
+                copied.style.opacity = 0;
+            }, 1200);
+        });
+    </script>
+</body>
+</html>
