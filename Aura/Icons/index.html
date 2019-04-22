@@ -8,7 +8,7 @@
         }
         body {
             margin: 0 2.5rem;
-            background: beige;
+            background: whitesmoke;
             font-family: 'Roboto', Arial, Helvetica, sans-serif;
         }
         code {
@@ -69,46 +69,14 @@
     </style>
 </head>
 <body>
-    <div>
-        <h3>Important: use meaningful and localized labels</h3>
-        <p>A "magnifying glass" icon can mean "Show the search form" in one context, and "Submit my search query" in a second context. Your text labels should then be "Show the search form" and "Submit search query", not "Search" (too generic) or worse "Magnifying glass" (describes the visuals and not the meaning). On multilingual sites, your text labels should also be localized, including all text labels that are hidden by default for sighted users.</p>
-    </div>
-
-    <hr>
-
-    <div>
-        <strong>Example usage:</strong>
-        <code><pre>
-&lt;a title="Filter"&gt;
-    &lt;svg class="icon" aria-hidden="true" focusable="false" style="fill: #81be44;"&gt;
-        &lt;use xlink:href="icons.svg#filter"&gt;&lt;/use&gt;
-    &lt;/svg&gt;
-    &lt;span class="access-label"&gt;Filter&lt;/span&gt;
-&lt;/a&gt;
-        </pre></code>
-        <p>The <code>a</code> element is optional. For styling these icons, you can either use classes or inline styles. Colors are controlled with either the <code>fill</code> CSS property or the <code>fill=""</code> SVG attribute.</p>
-    </div>
-
-    <hr>
-
-    <h3>Click to copy source: <div id="copied"></div></h3>
+    <h3>Click to copy icon source <div id="copied"></div></h3>
 
     <div class="list">
         <div>
-            <h3>#arrow-banner-left</h3>
+            <h3>#arrow-left</h3>
             <a title="">
                 <svg class="icon" aria-hidden="true" focusable="false">
-                    <use xlink:href="icons.svg#arrow-banner-left"></use>
-                </svg>
-                <span class="access-label"></span>
-            </a>
-        </div>
-
-        <div>
-            <h3>#arrow-banner-right</h3>
-            <a title="">
-                <svg class="icon" aria-hidden="true" focusable="false">
-                    <use xlink:href="icons.svg#arrow-banner-right"></use>
+                    <use xlink:href="icons.svg#arrow-left"></use>
                 </svg>
                 <span class="access-label"></span>
             </a>
@@ -125,20 +93,30 @@
         </div>
 
         <div>
-            <h3>#award</h3>
+            <h3>#arrow-right-circle</h3>
             <a title="">
                 <svg class="icon" aria-hidden="true" focusable="false">
-                    <use xlink:href="icons.svg#award"></use>
+                    <use xlink:href="icons.svg#arrow-right-circle"></use>
                 </svg>
                 <span class="access-label"></span>
             </a>
         </div>
 
         <div>
-            <h3>#button</h3>
+            <h3>#arrow-right-thin</h3>
             <a title="">
                 <svg class="icon" aria-hidden="true" focusable="false">
-                    <use xlink:href="icons.svg#button"></use>
+                    <use xlink:href="icons.svg#arrow-right-thin"></use>
+                </svg>
+                <span class="access-label"></span>
+            </a>
+        </div>
+
+        <div>
+            <h3>#award</h3>
+            <a title="">
+                <svg class="icon" aria-hidden="true" focusable="false">
+                    <use xlink:href="icons.svg#award"></use>
                 </svg>
                 <span class="access-label"></span>
             </a>
@@ -215,10 +193,10 @@
         </div>
 
         <div>
-            <h3>#flag-united-kingdom</h3>
+            <h3>#flag-uk</h3>
             <a title="">
                 <svg class="icon" aria-hidden="true" focusable="false">
-                    <use xlink:href="icons.svg#flag-united-kingdom"></use>
+                    <use xlink:href="icons.svg#flag-uk"></use>
                 </svg>
                 <span class="access-label"></span>
             </a>
@@ -307,13 +285,42 @@
         <div>
             <h3>#youtube</h3>
             <a title="">
-                <svg class="icon" aria-hidden="true" focusable="false" fill="#f00">
+                <svg class="icon" aria-hidden="true" focusable="false">
                     <use xlink:href="icons.svg#youtube"></use>
                 </svg>
                 <span class="access-label"></span>
             </a>
         </div>
 
+    </div>
+
+    <hr>
+
+    <div>
+        <h3>Important: use meaningful and localized labels</h3>
+        <p>A "magnifying glass" icon can mean "Show the search form" in one context, and "Submit my search query" in a second context.
+            Your text labels should then be "Show the search form" and "Submit search query", not "Search" (too generic) or worse
+            "Magnifying glass" (describes the visuals and not the meaning). On multilingual sites, your text labels should also
+            be localized, including all text labels that are hidden by default for sighted users.</p>
+    </div>
+
+    <hr>
+
+    <div>
+        <strong>Example usage:</strong>
+        <code><pre>
+    &lt;a title="Filter"&gt;
+        &lt;svg class="icon" aria-hidden="true" focusable="false" style="fill: #81be44;"&gt;
+            &lt;use xlink:href="icons.svg#filter"&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+        &lt;span class="access-label"&gt;Filter&lt;/span&gt;
+    &lt;/a&gt;
+            </pre></code>
+        <p>The
+            <code>a</code> element is optional. For styling these icons, you can either use classes or inline styles. Colors are controlled
+            with either the
+            <code>fill</code> CSS property or the
+            <code>fill=""</code> SVG attribute.</p>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
