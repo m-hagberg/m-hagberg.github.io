@@ -323,6 +323,20 @@
             <code>fill=""</code> SVG attribute.</p>
     </div>
 
+    <hr>
+
+    <div>
+        <h3>Adding new icons</h3>
+        <ul>
+            <li>Install SVGO globally: <code>npm install -g svgo</code></li>
+            <li>Locate the new icon SVG file, and run <code>svgo icon_name.svg</code></li>
+            <li>Open up icon_name.svg, copy-paste everything into the <code>icons.svg</code> file</li>
+            <li>Finally, replace <code>&lt;svg xmlns="..."&gt;</code> with <code>&lt;symbol id="icon_name"&gt;</code></li>
+            <li>(optional: remove unnecessary attributes inside the symbol, there are often id/class/data attributes which can be purged)</li>
+            <li><strong>Keep the viewport attribute</strong></li>
+        </ul>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
     <script>
         const clipboard = new ClipboardJS('a', {
